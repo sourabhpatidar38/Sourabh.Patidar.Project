@@ -245,18 +245,34 @@ body
 	background: f8f9fa;
 	margin: 100px 0;
 }
-
-.portfolio img
-{
-	margin: 10px 10px 10px 10px;
-	padding: 5px 5px 5px 5px;
-	height: 400px;
-	width: 400px;
-	transition: 1.5s;
+.portfolio{
+    width: 800px !important;
+    height: 500 px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: visible;
 }
-.portfolio img:hover 
-{
-	transform: translateY(-20px);
+.portfolio img{
+    height: fit-content;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.carousel-caption{
+    padding-bottom: 340px;
+}
+
+.btn-primary{
+    background: white;
+    color: black;
+    width: 20%;
+    border: 2px solid white;
+}
+
+.btn-primary:hover{
+    background: black;
+    color: white;
+    border: 2px solid white;
 }
 
 
