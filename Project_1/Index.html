@@ -1,272 +1,343 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Sourabh</title>
-<link rel="stylesheet" type="text/css" href="Stylesheet.css">	
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-</head>
-<body>
-<section id="nav-bar">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sourabh</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+      <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+    </video>
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><p class="logo">Sourabh.</p></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#banner">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">SERVICES</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#about-us"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ABOUT US
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#about-us">Introduction</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#testimonials"
+                      >Testimonials</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
 
-	<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="Images/logo.png"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#banner">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">SERVICES</a>
-        </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#about-us" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ABOUT US
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#about-us">Introduction</a></li>
-            <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</section>
+    <!--Banner Section-->
 
-<!--Banner Section-->
+    <section id="banner">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <span is="type-async" id="type-text">...</span>
+            <p class="promo-title">PHOTOGRAPHY</p>
+            <p>
+              Photographs play an important role in everyone’s life – they
+              connect us to our past, they remind us of people, places,
+              feelings, and stories. They can help us to know who we are. For
+              more subscribe my YouTube channel
+            </p>
+            <div class="buttons">
+              <button class="btn-sub">Subscribe</button>
+              <i class="far fa-bell"></i>
+              <a href="https://www.youtube.com/c/TEAMENGINEERS"
+            ><button class="btn-sub-two ">Watch Video</button></a>
 
-<section id="banner">
-<div class="container">
-<div class="row text-center">
-<div class="col-md-6">
-<p class="promo-title">PHOTOGRAPHY</p>
-<p>Photographs play an important role in everyone’s life – they connect us to our past, they remind us of people, places, feelings, and stories. They can help us to know who we are. For more subscribe my YouTube channel</p>
-<a href="#"><img src="Images/play.png" class="play-btn">Watch Tutorials</a>
-</div>
-<div class="col-md-6 text-center">
-<img src="Images/home.png" class="img-fluid">
-</div>
-</div>
-</div>
-</section>
-
-<!----Service Section---->
-
-<section id="services">
-<div class="container text-center">
-<h1 class="title">WHAT WE DO ?</h1>
-<div class="row text-center">
-<div class="col-md-4 services">
-<img src="Images/s11.png" class="service-img">
-<h4>General Lifestyle photography</h4>
-<p>Great lifestyle photography has the power to motivate your audience. Whether you want to inspire people to go somewhere, try a new experience, or learn about something they didn’t even know they were missing, lifestyle images can help you make your audience think – and help them connect with your brand along the way. </p>
-</div>
-<div class="col-md-4 services">
-<img src="Images/s12.png" class="service-img">
-<h4>Portrait photography</h4>
-<p>A picture says a thousand words, so it’s absolutely crucial to make sure your groups’ portraits communicates the right message. Professional portrait photography allows you to capture the people behind your organization.</p>
-</div>
-<div class="col-md-4 services">
-<img src="Images/s13.png" class="service-img">
-<h4>Product and Lifestyle photography</h4>
-<p>A picture is worth a thousand words, so it’s crucial that your product photography tells the best story possible. Quality imagery allows you to put your products on display for the world to see, whether you need new photos for your product catalog </p>
-</div>
-</div>
-	<button type="button" class="btn btn-primary">All Services</button>
-</div>
-</section>
-
-<!---About us Section--->
-
-<section id="about-us">
-<div class="container">
-<h1 class="title text-center">WHY CHOOSE US ?</h1>
-<div class="row">
-<div class="col-md-6 about-us">
-<p class="about-title">Why we're different </p>
-<p class="p1">Are you ready to start your next multimedia project? We know that when the time comes, you need a partner that not only understands and cares about your needs, but has the in-house capabilities to efficiently complete your project.</p>
-<p class="p1">Based in Indore, SP Multimedia is a full-service multimedia production company. Founded in 2021 by photographer Sourabh Patidar, SP Multimedia (formerly known as SP Photography) is one of the only studios in the city offering a complete range of integrated services including:</p>
-<ul>
-	<li>Photography</li>
-	<li>Retouching</li>
-	<li>Video and Television Production</li>
-	<li>Digital Media</li>
-	<li>Computer Generated Imagery (CGI)</li>
-	<li>Stock and Custom Room Sets</li>
-</ul>
-</div>
-<div class="col-md-6">
-<img src="Images/why2.png" class="img-why">
-</div>
-</div>
-</div>
-</section>
-
-<!---Testimonials Section---->
-
-<section id="testimonials">
-<div class="container">
-<h1 class="title text-center">WHY CLIENTS SAY</h1>
-<div class="row offset-1">
-<div class="col-md-5 testimonials">
-<p>Thank you, thank you, thank you!  you are an expert in making everyone feel good, happy and welcome. Oh and a terrific photographer too.</p>
-<img src="Images/tes1.jpeg">
-<p class="user-del"><b>Calla G.</b><br>Random Client</p>
-</div>
-<div class="col-md-5 testimonials">
-<p>Sourabh is truly an outstanding photographer (and wonderful person) with an almost mystical ability to capture the true nature of people and events. I'd recommend him to anyone!</p>
-<img src="Images/tes2.jpeg">
-<p class="user-del"><b>Laurie H.</b><br>Random Client</p>
-</div>
-</div>
-</div>
-</section>
-
-<!------ port---->
-<section id="portfolio">
-  <div class="container">
-<h1 class="title text-center">PORTFOLIO</h1>
- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators text-center">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner text-center">
-                <div class="carousel-item active">
-                    <img src="Images/4.jpeg" style="height:500px;" class="d-block w-100 imgc" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="Images/5.jpeg" style="height:500px;" class="d-block w-100 imgc" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-
-
-
-                <div class="carousel-item">
-                    <img src="Images/6.jpeg" style="height:500px;" class="d-block w-100 imgc" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          </div>
         </div>
       </div>
-      </section>
-
-<!---Contact Us-->
-
-<section id="contact">
-<div class="container">
-<h1 class="title text-center">CONTACT US</h1>
-<div class="row text-center">
-<div class="col-md-6">
-<form class="contact-form">
-<div class="form-group">
-<input type="text" class="form-control" placeholder="Your Name">
-</div>
-<div class="form-group">
-<input type="number" class="form-control" placeholder="Phone Number">
-</div>
-<div class="form-group">
-<input type="email" class="form-control" placeholder="Your Email">
-</div>
-<div class="form-group">
-<textarea class="form-control" rows="4" placeholder="Message">
-</textarea>
-</div>
-<button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
-<div class="col-md-6">
-<img src="Images/cn.png" class="img-con">
-</div>
-</div>
-
-</div>
-
     </section>
-<!----Social Media Section----->
 
-<section id="social-media">
-<div class="container text-center">
-<p>FIND US ON SOCIAL MEDIA</p>
-<div class="social-icons">
-<a href="https://www.facebook.com/happyhumanbeing"><img src="Images/fb.png"></a>
-<a href="https://www.whatsapp.com/"><img src="Images/wh.png"></a>
-<a href="https://www.instagram.com/_sourabhpatidar_/"><img src="Images/int.png"></a>
-<a href="https://www.youtube.com/c/TEAMENGINEERS"><img src="Images/yt.png"></a>
-</div>
-</div>
-</section>
+    <!----Service Section---->
 
+    <section id="services">
+      <div class="container text-center">
+        <h1 class="title">services.</h1>
+        <div class="row text-center">
+          <div class="col-md-3 services">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Images/wl.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Wildlife photography</h3>
+                  <hr>
+                  <p>Great lifestyle photography has the power to motivate your
+                    audience.</p>
+                    <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 services">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Images/pt.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Portrait photography</h3>
+                  <hr>
+                  <p>A picture says a thousand words, so it’s absolutely crucial to
+                    make sure your groups’ portraits communicates the right message.</p>
+                    <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 services">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Images/gl.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>General Lifestyle photography</h3>
+                  <hr>
+                  <p>Great lifestyle photography has the power to motivate your
+                    audience.</p>
+                    <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 services">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Images/pd.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Product and Lifestyle photography</h3>
+                  <hr>
+                  <p>A picture is worth a thousand words, so it’s crucial that your
+                    product photography tells the best story possible.</p>
+                    <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!---Footer Section--->
-<section id="footer">
-<div class="container">
-<div class="row">
-<div class="col-md-4 footer-box">
-<img src="Images/logo.png">
-<p class="p2">Photographs play an important role in everyone’s life – they connect us to our past, they remind us of people, places, feelings, and stories. They can help us to know who we are.</p>
-</div>
-<div class="col-md-4 footer-box">
-<p><b>CONTACT US</b></p>
-<p>Kalyan Sampat, Indore</p>
-<p>+0 864898972</p>
-<p>sourabhpatidar@gmail.com</p>
-</div>
-<div class="col-md-4 footer-box">
-<p><b>SUBSCRIBE FOR LATEST EVENT</b></p>
-<input type="email" class="form-control">
-<button type="button" class="btn btn-primary">Subscribe</button>
-</div>
-</div>	
-<hr>
-<p class="cr">Webpage Created by Sourabh Patidar</p>
-</div>
-	
-</section>
+    <!---About us Section--->
 
+    <section id="about-us">
+      <div class="container">
+        <h1>About us</h1>
+        <div class="row">
+          <div class="col-md-6 about-us">
+            <p class="about-title">Why we're different</p>
+            <p class="p1">
+              Are you ready to start your next multimedia project? We know that
+              when the time comes, you need a partner that not only understands
+              and cares about your needs, but has the in-house capabilities to
+              efficiently complete your project.
+            </p>
+            <p class="p1">
+              Based in Indore, SP Multimedia is a full-service multimedia
+              production company. Founded in 2021 by photographer Sourabh
+              Patidar, SP Multimedia (formerly known as SP Photography) is one
+              of the only studios in the city offering a complete range of
+              integrated services including:
+            </p>
+            <ul>
+              <li>Photography</li>
+              <li>Retouching</li>
+              <li>Video and Television Production</li>
+              <li>Digital Media</li>
+              <li>Computer Generated Imagery (CGI)</li>
+              <li>Stock and Custom Room Sets</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <img src="Images/why2.png" class="img-why" />
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!------ port---->
+    <section id="portfolio">
+      <div class="container">
+        <h1>portfolio</h1>
+      <div class="row row-pl">
+        <div class="col-md-3">
+          <img src="Images/111.jpg" alt="Snow" style="width:100%" id="img-pl">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/222.jpg" alt="Forest" style="width:100%" id="img-pl">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/333.jpg" alt="Mountains" style="width:100%" id="img-pl">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/444.jpg" alt="Mountains" style="width:100%" id="img-pl">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/555.jpg" alt="Mountains" style="width:100%" id="img-pl">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/666.jpg" alt="Mountains" style="width:100%" id="img-pl">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/777.jpg" alt="Mountains" style="width:100%" id="img-pl">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/888.jpg" alt="Mountains" style="width:100%" id="img-pl">
+        </div>
+      </div>
+      </div>
+  
+    </section>
+       <!---Testimonials Section---->
 
+       <section id="testimonials">
+        <div class="container">
+          <h1 class="title text-center">Testimonials</h1>
+          <div class="row offset-1">
+          <div class="col-md-5 testimonials">
+          <p>Thank you, thank you, thank you!  you are an expert in making everyone feel good, happy and welcome. Oh and a terrific photographer too.</p>
+          <img src="Images/tes1.jpeg">
+          <p class="user-del"><b>Calla G.</b><br>Random Client</p>
+          </div>
+          <div class="col-md-5 testimonials">
+          <p>Sourabh is truly an outstanding photographer (and wonderful person) with an almost mystical ability to capture the true nature of people and events. I'd recommend him to anyone!</p>
+          <img src="Images/tes2.jpeg">
+          <p class="user-del"><b>Laurie H.</b><br>Random Client</p>
+          </div>
+          </div>
+          </div>
+      </section>
+    <!----Social Media Section----->
 
-</body>
+    <section id="social-media">
+      <div class="container text-center">
+        <h1>..SOCIAL MEDIA..</h1>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/happyhumanbeing"
+            ><img src="Images/fb.png"
+          /></a>
+          <a href="https://www.whatsapp.com/"><img src="Images/wh.png" /></a>
+          <a href="https://www.instagram.com/_sourabhpatidar_/"
+            ><img src="Images/int.png"
+          /></a>
+          <a href="https://www.youtube.com/c/TEAMENGINEERS"
+            ><img src="Images/yt.png"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+<!--Contact us-->
+
+    <section id="contact">
+      <div class="container">
+      <h1 class="title text-center">CONTACT US</h1>
+      <div class="row text-center">
+      <div class="col-md-6">
+        <div class="form">
+          <div id="error_message">
+          </div>
+          <form action="" id="myform" onsubmit="return validate();" class="contact-form">
+              <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your name">
+              <input class="form-control" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+              <input class="form-control" type="email" name="email" id="email" placeholder="Enter Your email">
+              <textarea class="form-control" name="text" id="text" cols="30" rows="10"
+                  placeholder="Ellaborate your concern about learning"></textarea>
+              <button class="btn btn-sm btn-dark">Submit</button>
+      </div>
+      </form>
+      </div>
+      <div class="col-md-6">
+      <img src="Images/cn.png" class="img-con">
+      </div>
+      </div>
+      
+      </div>
+      
+          </section>
+
+    <!---Footer Section--->
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <p class="logo-ft">Sourabh.</p>
+          <div class="col-md-4 footer-box">
+            <p class="p2">
+              Photographs play an important role in everyone’s life – they
+              connect us to our past, they remind us of people, places,
+              feelings, and stories. They can help us to know who we are.
+            </p>
+          </div>
+          <div class="col-md-4 footer-box">
+            <p><b>CONTACT US</b></p>
+            <p>Kalyan Sampat, Indore</p>
+            <p>+0 864898972</p>
+            <p>sourabhpatidar@gmail.com</p>
+          </div>
+          <div class="col-md-4 footer-box">
+            <p><b>SUBSCRIBE FOR LATEST EVENT</b></p>
+            <input type="email" class="form-control-em" />
+            <button type="button" class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+        <hr />
+        <p class="cr">Webpage Created by Sourabh Patidar</p>
+      </div>
+    </section>
+  </body>
+  <script src="main.js"></script>
 </html>

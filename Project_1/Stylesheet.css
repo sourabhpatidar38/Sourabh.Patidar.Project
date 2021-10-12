@@ -20,14 +20,21 @@ body
 
 .navbar
 {
-	background-image: linear-gradient(to right, #b2fefa, #0ed2f7);
+
+	margin-top: 10px;
+	background: rgba(216, 213, 213, 0.5);
+	color: #f1f1f1;
 	padding: 0;
 }
 
-.navbar-brand img
+.logo
 {
- 	height: 40px ; 
- 	padding-left: 20px;
+	padding-top: 10px;
+	color: #f8f9fa;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+ 	padding-left: 30px;
 }
 
 .navbar-nav li
@@ -38,9 +45,14 @@ body
 .navbar-nav li a 
 {
 	color: #000000;
-	font-weight: 600;
+	font-weight: 900;
+	letter-spacing: 1px;
 	float: rights;
 	text-align: center;
+}
+.nav-link:hover{
+	background:#f8f9fa;
+	color: white;
 }
 
 .navbar-toggler-icon
@@ -53,11 +65,49 @@ body
 
 #banner
 {
-	background-image: linear-gradient(to right, #b2fefa, #0ed2f7);
-	color: #000000;
-	padding: 5%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	padding: 10%;
 }
-
+/* video background */
+#background-video {
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+  }
+  
+  /* page content */
+  h1, h2 {
+	color: white;
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	text-align: center;
+  }
+  
+  h1 {
+	font-size: 6rem;
+	margin-top: 20vh;
+	padding: auto; 
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 10px;
+  }
+  
+  h2 { font-size: 3rem; }
+  
+  @media (max-width: 750px) {
+	  #background-video { display: none; }
+	  body {
+		background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+		background-size: cover;
+	  }
+  }
 .promo-title
 {
 	font-size: 40px;
@@ -77,63 +127,109 @@ body
 	text-decoration: none;
 }
 
-.img-fluid
-{
-	width: 60%;
+#type-text{
+	padding: 2px 0%;
+	color:whitesmoke;
+	font-family: "Open Sans", sans-serif ;
+	font-size: 2em;
+	font-display: inherit;
+	white-space: nowrap;
+	padding-bottom: 0%;
+  }
+  .btn-sub-two{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px; 
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
 }
+
+.btn-sub{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px; 
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.btn-sub-two:hover {
+	background: #FF9800;
+	color: white;
+  }
+.btn-sub:hover {
+	background: red;
+	color: white;
+  }
 
 /*---Services Section---*/
 
 #services
 {
-	padding: 80px 0;
+	padding: 50px 50px 50px 50px;
+	margin: 50px 50px 50px 50px;
 }
-.service-img
-{
-	width: 100px;
-	margin-top: 20px ;
-}
-.services
-{
-	padding: 20px;
-}
-.services h4
-{
-	padding: 5px;
-	margin-top: 25px;
-	text-transform: uppercase;
-}
-.title::before
-{
-	content: '';
-	background: #0ed2f7;
-	height: 5px;
-	width: 200px;
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-	transform: translateY(63px);
-}
-.title::after
-{
-	content: '';
-	background: #0ed2f7;
-	height: 17px;
-	width: 70px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 40px;
-	display: block;
-	transform: translateY(4.5px);
-}
-#services .btn-primary
-{
-	box-shadow: none ;
-	padding: 8px 25px;
-	border: none;
-	border-radius: 20px;
-	background-image: linear-gradient(to right, #b2fefa, #0ed2f7);
+
+
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px; 
+  }
+  
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; 
+	backface-visibility: hidden;
+  }
+  
+
+  .flip-card-front {
+	background-color: #bbb;
 	color: black;
+  }
+  .flip-card-front img{
+	  width: 300px;
+	  height: 300px;
+	
+	}
+  
+  .flip-card-back {
+	background-color: dodgerblue;
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .flip-card-back p{
+	  font-size: small;
+	  margin-left: 5px;
+	  margin-right: 5px;
+  }
+  .flip-card-back h3{
+	font-size:large;
+	margin-top: 15px;
 }
 
 
@@ -141,7 +237,8 @@ body
 
  #about-us
  {
- 	background: #f8f9fa;
+ 	background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
  	padding-top: 50px;
  	padding-bottom: 50px;
  }
@@ -154,6 +251,7 @@ body
 #about-us ul li 
  {
  	margin: 10px 0;
+	 text-align:left;
  }
 #about-us ul
   {
@@ -172,13 +270,14 @@ body
 }
 
 /*---Testimonials Section---*/
-
-
 #testimonials
 {
+	background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	margin: 100px 0;
 }
-
 .testimonials
 {
 	border-left: 4px solid #0ed2f7;
@@ -189,8 +288,8 @@ body
 }
 .testimonials img
 {
-	height: 60px;
-	width: 60px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
 	margin: 0 10px ;
 }
@@ -199,11 +298,14 @@ body
 	 display: inline-block;
 	 font-size: 12px;
 }
+
+
 /*---Contact Us----*/
 
 
 #contact{
- background-color: aliceblue;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -223,58 +325,61 @@ body
   color: rgb(41, 40, 40) !important;
 }
 
-.btn-primary
+.btn-sm
 {
 	box-shadow: none !important;
+	width: 500px;
 	border: none;
 	border-radius: 0;
 	margin-top: 30px;
-	background-image: linear-gradient(to right, #b2fefa, #0ed2f7);
 }
-
 .img-con
   {
   	width: 70%;
   	margin-top: 30px;
   }
 
+#error_message{
+    margin-bottom: 20px;
+    background: rgba(247, 68, 74, 0.664);
+    padding: 0px;
+    text-align: center;
+    font-size: 24px;
+    transition: all 0.5s ease;
+  }
+
+
 /*--port--*/
 
 #portfolio
 {
-	background: f8f9fa;
-	margin: 100px 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
-.portfolio{
-    width: 800px !important;
-    height: 500 px !important;
-    padding-left: 0px;
-    padding-right: 0px;
-    border: visible;
-}
-.portfolio img{
-    height: fit-content;
-    border-radius: 50px;
-    width: fit-content;
-}
-
-.carousel-caption{
-    padding-bottom: 340px;
-}
-
-.btn-primary{
-    background: white;
-    color: black;
-    width: 20%;
-    border: 2px solid white;
-}
-
-.btn-primary:hover{
-    background: black;
-    color: white;
-    border: 2px solid white;
-}
-
+  img:hover {
+	animation: shake 0.5s;
+  
+	animation-iteration-count: infinite;
+  }
+  #img-pl
+  {
+	  margin: 10px 10px 10px 10px;
+	  border: 5px solid white;
+  }
+  
+  @keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 /*----Social Media Section-----*/
 
@@ -303,8 +408,8 @@ body
 
 #footer
 {
-	background-image: linear-gradient(to right, #b2fefa, #0ed2f7);
-	color: black;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
 }
 
 .footer-box
@@ -327,20 +432,21 @@ body
 	font-size: 10px;
 	padding-top: 7px;
 }
-.footer-box .form-control
+.footer-box .form-control-em
 {
 	box-shadow: none !important;
 	border: none;
 	border-radius: 0;
 	margin-top: 25px;
-	max-width: 250px;
+	max-width: 350px;
 }
 .footer-box .btn-primary
 {
 	box-shadow: none !important;
 	border: none;
 	border-radius: 10px;
-	margin-top: 15px;
+	height: 40px;
+	width: 100px;
 	background-image: linear-gradient(to right, red, red);
 }
 
@@ -359,4 +465,15 @@ hr
 	font-size: 9px;
 	font-weight: 600;
 }
+.logo-ft
+{
+	padding-top: 10px;
+	size: 100px;
+	color: #f8f9fa;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+ 	padding-left: 20px;
+}
+
 
